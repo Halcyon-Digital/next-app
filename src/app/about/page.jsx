@@ -26,7 +26,7 @@ function About() {
       [name]: files[0],
     }));
   };
-
+  // ok
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform form submission logic here
