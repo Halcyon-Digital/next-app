@@ -22,7 +22,7 @@ function Navbar() {
           <Link className=" px-4 py-2" href={'/blog'}>
             Blog
           </Link>
-          <Link className=" px-4 py-2" href={'/contact'}>
+          <Link className=" px-4 py-2" href={'/todos'}>
             Contact
           </Link>
           <Link className=" px-4 py-2" href={'/products'}>

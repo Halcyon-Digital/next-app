@@ -1,6 +1,7 @@
 'use client';
 
-import CommentCard from '@/components/CommentCard';
+import dynamic from 'next/dynamic';
+const CommentCard = dynamic(() => import('@/components/CommentCard'));
 import { getProducts } from '@/redux/features/product/product-slice';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';

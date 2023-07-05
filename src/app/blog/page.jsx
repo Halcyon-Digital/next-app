@@ -60,7 +60,11 @@ const BlogPost = () => {
         <meta name="twitter:creator" content="@yourusername" />
       </Head>
       <div className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 gap-4">
-        {data && data.map((item) => <Cart key={item.id} item={item} />)}
+        {!!data.length ? (
+          data.map((item) => <Cart key={item.id} item={item} />)
+        ) : (
+          <div class="spinner"></div>
+        )}
       </div>
     </>
   );
