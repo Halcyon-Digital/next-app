@@ -63,7 +63,7 @@ const BlogPost = () => {
         {!!data.length ? (
           data.map((item) => <Cart key={item.id} item={item} />)
         ) : (
-          <div class="spinner"></div>
+          <div className="spinner"></div>
         )}
       </div>
     </>
